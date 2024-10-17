@@ -1,0 +1,144 @@
+<article class="content__block profile d-flex flex-column">
+  <header class="profile__header">
+    <nav class="profile__menu d-flex">
+      <button
+        type="button"
+        class="menu__button d-flex justify-content-center active"
+      >
+        Edit Profile
+      </button>
+      <button type="button" class="menu__button d-flex justify-content-center">
+        Preferences
+      </button>
+      <button type="button" class="menu__button d-flex justify-content-center">
+        Security
+      </button>
+    </nav>
+  </header>
+  <article class="profile__content d-flex">
+    <section class="profile__avatar">
+      <button type="button" class="profile__avatar-edit"></button>
+    </section>
+    <section class="profile__settings flex-grow-1">
+      <section
+        class="d-flex flex-column profile_name profile__settings-wrapper"
+      >
+        <label for="name" class="profile__label">Your Name</label>
+        <input
+          type="text"
+          name="name"
+          class="profile__input"
+          placeholder="Charlene Reed"
+          disabled
+        />
+      </section>
+      <section
+        class="d-flex flex-column profile_username profile__settings-wrapper"
+      >
+        <label for="username" class="profile__label">User name</label>
+        <input
+          type="text"
+          name="username"
+          class="profile__input"
+          placeholder="Charlene Reed"
+          disabled
+        />
+      </section>
+      <section
+        class="d-flex flex-column profile_email profile__settings-wrapper"
+      >
+        <label for="email" class="profile__label">Email</label>
+        <input
+          type="email"
+          name="email"
+          class="profile__input"
+          placeholder="charlenereed@gmail.com"
+          disabled
+        />
+      </section>
+      <section
+        class="d-flex flex-column profile_password profile__settings-wrapper"
+      >
+        <label for="password" class="profile__label">Password</label>
+        <input
+          type="password"
+          name="password"
+          class="profile__input"
+          placeholder="**********"
+          disabled
+        />
+      </section>
+      <section
+        class="d-flex flex-column profile_birthdate profile__settings-wrapper"
+      >
+        <label for="birthdate" class="profile__label">Date of Birth</label>
+        <select name="birthdate" class="profile__input form-select" disabled>
+          <option value="value2" selected>25 January 1990</option>
+        </select>
+      </section>
+      <section
+        class="d-flex flex-column profile_address-pr profile__settings-wrapper"
+      >
+        <label for="address-pr" class="profile__label">Present Address</label>
+        <input
+          type="text"
+          name="address-pr"
+          class="profile__input"
+          placeholder="San Jose, California, USA"
+          disabled
+        />
+      </section>
+      <section
+        class="d-flex flex-column profile_address-per profile__settings-wrapper"
+      >
+        <label for="address-per" class="profile__label"
+          >Permanent Address</label
+        >
+        <input
+          type="text"
+          name="address-per"
+          class="profile__input"
+          placeholder="San Jose, California, USA"
+          disabled
+        />
+      </section>
+      <section
+        class="d-flex flex-column profile_city profile__settings-wrapper"
+      >
+        <label for="city" class="profile__label">City</label>
+        <input
+          type="text"
+          name="city"
+          class="profile__input"
+          placeholder="San Jose"
+          disabled
+        />
+      </section>
+      <section
+        class="d-flex flex-column profile_postal-code profile__settings-wrapper"
+      >
+        <label for="postal-code" class="profile__label">Postal Code</label>
+        <input
+          type="text"
+          name="postal-code"
+          class="profile__input"
+          placeholder="45962"
+          disabled
+        />
+      </section>
+      <section
+        class="d-flex flex-column profile_country profile__settings-wrapper"
+      >
+        <label for="country" class="profile__label">Country</label>
+        <input
+          type="text"
+          name="country"
+          class="profile__input"
+          placeholder="USA"
+          disabled
+        />
+      </section>
+    </section>
+  </article>
+  <button type="button" class="profile__save">Save</button>
+</article>

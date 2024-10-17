@@ -1,0 +1,173 @@
+.content {
+  padding: 2rem;
+  font-family: $font-family !important;
+
+  .profile {
+    background: $color-white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+
+    @media (max-width: 635px) {
+      padding: 1.2rem;
+    }
+
+    &__menu {
+      gap: 2rem;
+      border-bottom: solid 1px $color-header-border;
+
+      @media (max-width: 768px) {
+        gap: 1rem;
+      }
+
+      @media (max-width: 635px) {
+        justify-content: space-between;
+      }
+
+      .menu__button {
+        border: none;
+        background-color: transparent;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.2rem;
+        color: $color-input;
+        position: relative;
+        overflow: hidden;
+        padding: 0.8rem;
+        white-space: nowrap;
+
+        &.active {
+          color: $color-selected;
+
+          &::after {
+            content: "";
+            width: 100%;
+            height: 5px;
+            background-color: $color-selected;
+            border-radius: 5px;
+            position: absolute;
+            bottom: -2px;
+          }
+        }
+      }
+    }
+
+    &__content {
+      padding: 2rem 0;
+      gap: 3rem;
+
+      @media (max-width: 768px) {
+        flex-direction: column !important;
+      }
+
+      @media (max-width: 635px) {
+        align-items: center !important;
+      }
+    }
+
+    &__avatar {
+      background-image: url("/src/img/790e98129931897251abd3915a931233.jpeg");
+      background-size: 250%;
+      background-repeat: no-repeat;
+      background-position: 75% 0;
+      height: 8.125rem;
+      border-radius: $button-pill;
+      aspect-ratio: 1 / 1;
+      position: relative;
+
+      @media (max-width: 992px) {
+        height: 6.125rem;
+      }
+
+      @media (max-width: 768px) {
+        height: 8.125rem;
+        width: 8.125rem;
+      }
+
+      @media (max-width: 635px) {
+        height: 10.625rem;
+        width: 10.625rem;
+      }
+
+      &-edit {
+        border: none;
+        border-radius: $button-pill;
+        background-color: $color-selected;
+        background-image: url("/src/img/svg/pencil-alt.svg");
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        aspect-ratio: 1 / 1;
+        height: 1.7rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 0;
+
+        @media (max-width: 992px) {
+          bottom: 0.5rem;
+        }
+      }
+    }
+
+    &__settings {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 3rem;
+      row-gap: 1.5rem;
+
+      @media (max-width: 635px) {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+      }
+
+      &-wrapper {
+        gap: 1rem;
+      }
+
+      label {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+        color: $font-color;
+      }
+
+      input,
+      select {
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.16rem;
+        padding: 0.8rem 1rem;
+        width: 100%;
+        border: solid 1px $color-input-border;
+        border-radius: 15px;
+        background-color: #fff;
+
+        &::placeholder {
+          color: $color-input;
+        }
+      }
+      select {
+        color: $color-input;
+      }
+    }
+
+    &__save {
+      background-color: $color-selected;
+      color: $color-white;
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      padding: 0.7rem 4rem;
+      border: none;
+      border-radius: 1rem;
+      align-self: flex-end !important;
+
+      @media (max-width: 992px) {
+        padding: 0.5rem 3.5rem;
+      }
+
+      @media (max-width: 635px) {
+        align-self: normal !important;
+      }
+    }
+  }
+}

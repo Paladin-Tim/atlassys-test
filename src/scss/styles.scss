@@ -1,0 +1,20 @@
+@import "bootstrap/scss/bootstrap";
+@import "./variabels.scss";
+@import "./blocks/header.scss";
+@import "./blocks/content.scss";
+@import "./blocks/sider.scss";
+
+/* --- Global styles --- */
+
+html {
+  font-size: 16px !important;
+  line-height: 1.625rem;
+}
+
+body {
+  background: $bg-color;
+}
+
+.content__block {
+  padding-bottom: 5rem;
+}

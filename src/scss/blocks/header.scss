@@ -1,0 +1,155 @@
+.header {
+  background: $color-white;
+  border-bottom: solid 1px $bg-color-dark;
+  gap: 2rem;
+  padding: 2rem;
+
+  @media (max-width: 992px) {
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.2rem;
+  }
+
+  @media (max-width: 635px) {
+    flex-direction: column !important;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      line-height: 2.1rem;
+      color: $font-color-heading;
+
+      @media (max-width: 635px) {
+        display: none !important;
+      }
+    }
+  }
+
+  &__search {
+    @media (max-width: 635px) {
+      width: 100%;
+    }
+
+    input {
+      box-sizing: border-box;
+      background-image: url("/src/img/svg/magnifying-glass.svg");
+      background-position: 1.25rem center;
+      background-repeat: no-repeat;
+      padding: 0.75rem 0.1rem 0.75rem 3rem;
+      border: none !important;
+      border-radius: 100px;
+      background-color: $bg-color-dark;
+
+      @media (max-width: 768px) {
+        background-position: 0.7rem center;
+        padding: 0.5rem 0.1rem 0.5rem 2rem;
+      }
+
+      @media (max-width: 635px) {
+        background-position: 1.25rem center;
+        padding: 0.75rem 0.1rem 0.75rem 3rem;
+      }
+
+      &::placeholder {
+        color: $color-search;
+      }
+    }
+  }
+
+  &__menu {
+    gap: 2rem;
+
+    @media (max-width: 992px) {
+      gap: 1rem;
+    }
+
+    @media (max-width: 635px) {
+      display: none !important;
+    }
+
+    .menu__button {
+      border-radius: $button-pill;
+      border: none;
+      background-color: $bg-color;
+      aspect-ratio: 1/1;
+      height: 3.125rem;
+
+      &.settings,
+      &.notification {
+        padding: 0.5rem;
+      }
+
+      &.settings .menu__icon {
+        background-image: url("/src/img/svg/settings.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+      }
+
+      &.notification .menu__icon {
+        background-image: url("/src/img/svg/notification.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+      }
+
+      &.profile .menu__icon {
+        background-image: url("/src/img/790e98129931897251abd3915a931233.jpeg");
+        background-size: 250%;
+        background-repeat: no-repeat;
+        background-position: 75% 0;
+        height: 100%;
+        border-radius: $button-pill;
+        aspect-ratio: 1 / 1;
+      }
+
+      @media (max-width: 992px) {
+        height: 2.8rem;
+      }
+
+      @media (max-width: 768px) {
+        height: 2.4rem;
+      }
+    }
+  }
+
+  &-mobile {
+    @media (min-width: 635px) {
+      display: none !important;
+    }
+
+    &__title {
+      h1 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        color: $font-color-heading;
+      }
+    }
+
+    .menu-mobile__button.profile {
+      border-radius: $button-pill;
+      border: none;
+      background-color: $bg-color;
+      aspect-ratio: 1/1;
+      height: 3.125rem;
+
+      .menu-mobile__icon {
+        background-image: url("/src/img/790e98129931897251abd3915a931233.jpeg");
+        background-size: 250%;
+        background-repeat: no-repeat;
+        background-position: 75% 0;
+        height: 100%;
+        border-radius: $button-pill;
+        aspect-ratio: 1 / 1;
+      }
+    }
+  }
+}
