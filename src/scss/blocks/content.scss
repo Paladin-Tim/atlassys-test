@@ -1,11 +1,11 @@
 .content {
-  padding: 2rem;
+  padding: 2rem 2.5rem;
   font-family: $font-family !important;
 
   .profile {
     background: $color-white;
     border-radius: 1.5rem;
-    padding: 2rem;
+    padding: 1.8rem;
 
     @media (max-width: 635px) {
       padding: 1.2rem;
@@ -28,11 +28,11 @@
         background-color: transparent;
         font-size: 1rem;
         font-weight: 500;
-        line-height: 1.2rem;
+        line-height: 1.1rem;
         color: $color-input;
         position: relative;
         overflow: hidden;
-        padding: 0.8rem;
+        padding: 0.5rem 1.3rem;
         white-space: nowrap;
 
         &.active {
@@ -52,8 +52,8 @@
     }
 
     &__content {
-      padding: 2rem 0;
-      gap: 3rem;
+      padding: 3.5rem 0;
+      gap: 3.5rem;
 
       @media (max-width: 768px) {
         flex-direction: column !important;
@@ -111,8 +111,8 @@
     &__settings {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 3rem;
-      row-gap: 1.5rem;
+      column-gap: 2rem;
+      row-gap: 1.7rem;
 
       @media (max-width: 635px) {
         grid-template-columns: repeat(1, 1fr);
@@ -120,7 +120,7 @@
       }
 
       &-wrapper {
-        gap: 1rem;
+        gap: 0.6rem;
       }
 
       label {
@@ -135,7 +135,7 @@
         font-size: 0.9rem;
         font-weight: 400;
         line-height: 1.16rem;
-        padding: 0.8rem 1rem;
+        padding: 0.8rem 1.2rem;
         width: 100%;
         border: solid 1px $color-input-border;
         border-radius: 15px;

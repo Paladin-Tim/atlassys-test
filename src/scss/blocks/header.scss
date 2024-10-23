@@ -1,8 +1,8 @@
 .header {
   background: $color-white;
   border-bottom: solid 1px $bg-color-dark;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 1.9rem;
+  padding: 1.3rem 2.7rem 1.2rem 2.5rem;
 
   @media (max-width: 992px) {
     gap: 1.5rem;
@@ -23,6 +23,7 @@
       font-weight: 600;
       line-height: 2.1rem;
       color: $font-color-heading;
+      margin: 0;
 
       @media (max-width: 635px) {
         display: none !important;
@@ -38,12 +39,14 @@
     input {
       box-sizing: border-box;
       background-image: url("/src/img/svg/magnifying-glass.svg");
-      background-position: 1.25rem center;
+      background-position: 2.7rem center;
       background-repeat: no-repeat;
-      padding: 0.75rem 0.1rem 0.75rem 3rem;
+      padding: 0.7rem 0.9rem 0.75rem 5rem;
       border: none !important;
       border-radius: 100px;
       background-color: $bg-color-dark;
+      line-height: 1.3rem;
+      font-size: 1rem;
 
       @media (max-width: 768px) {
         background-position: 0.7rem center;
@@ -77,11 +80,15 @@
       border: none;
       background-color: $bg-color;
       aspect-ratio: 1/1;
-      height: 3.125rem;
 
       &.settings,
       &.notification {
-        padding: 0.5rem;
+        padding: 0.8rem;
+        height: 3.2rem;
+      }
+
+      &.profile {
+        height: 3.7rem;
       }
 
       &.settings .menu__icon {

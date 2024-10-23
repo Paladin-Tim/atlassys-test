@@ -2,8 +2,8 @@
   max-width: 25%;
   background: #fff;
   border-right: solid 1px $bg-color-dark;
-  gap: 3.5rem;
-  padding: 2rem 2rem 2rem 0;
+  gap: 2rem;
+  padding: 1.5rem 1.2rem 2rem 0;
 
   @media (max-width: 768px) {
     gap: 3rem;
@@ -15,7 +15,7 @@
   }
 
   &__logo-wrapper {
-    padding-left: 2rem;
+    padding-left: 2.6rem;
 
     @media (max-width: 768px) {
       flex-grow: 0;
@@ -24,7 +24,7 @@
   }
 
   &__logo {
-    height: 3.75rem;
+    height: 3.6rem;
     background-repeat: no-repeat;
     background-position: left;
     background-image: url("/src/img/svg/logo.svg");
@@ -32,8 +32,6 @@
   }
 
   &__menu {
-    gap: 1.5rem;
-
     @media (max-width: 992px) {
       gap: 1rem;
     }
@@ -43,14 +41,14 @@
       background-color: transparent;
       font-size: 1.125rem;
       font-weight: 500;
-      line-height: 1.8rem;
+      line-height: 2rem;
       color: $font-color-sider;
-      gap: 1.2rem;
+      gap: 1.7rem;
       text-align: left;
       white-space: nowrap;
       overflow: hidden;
       position: relative;
-      padding: 1rem 2rem;
+      padding: 1rem 1.6rem 1rem 2.7rem;
 
       @media (max-width: 992px) {
         font-size: 1rem;
